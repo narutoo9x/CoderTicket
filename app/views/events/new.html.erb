@@ -1,0 +1,11 @@
+<h2>Create New Event</h2>
+<%= simple_form_for(@event) do |f| %>
+	<%= f.input :name, label: "Name"%>
+	<%= f.input :starts_at, label: "Start at" %>
+	<%= f.input :ends_at, label: "End at" %>
+	<%= f.input :extended_html_description, label: "More html info" %>
+	<%= f.association :category, label: "Category" , collection: Category.all.order(:name), prompt: "Choose a category" %>
+	<%= f.association :venue, label: "Venue" , collection: Venue.all.order(:name), prompt: "Choose a venue" %>
+
+	<%= f.submit :submit, class: 'btn btn-primary' %>
+<% end %>

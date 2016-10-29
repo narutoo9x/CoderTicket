@@ -15,7 +15,13 @@ class ApplicationController < ActionController::Base
 
   	def require_user!
   		unless current_user
-  			redirect_to register_path, flash: { success: "Please log in first." }
+  			redirect_to login_path, flash: { success: "Please log in first." }
   		end
   	end
+
+    def require_no_user!
+      if current_user
+        redirect_to login_path, flash: {success: "You are already logged in."}
+      end
+    end
 end

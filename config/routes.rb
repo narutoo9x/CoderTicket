@@ -1,11 +1,16 @@
 Rails.application.routes.draw do
   root 'events#index'
+
   get '/upcoming' => 'events#index'
   get '/login' => 'sessions#new'
   get '/register' => 'users#new'
   delete 'logout' => 'sessions#destroy'
+
+  patch 'users/:id/events/:id/' => 'events#publish_event', as: 'publish_event'
   resources :sessions, only: [:new, :create]
-  resources :users
+  resources :users do
+    resources :events
+  end
   resources :events do
     resources :tickets
   end

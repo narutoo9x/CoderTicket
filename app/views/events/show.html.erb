@@ -19,11 +19,17 @@
           </div>
           <div class="clearfix"></div>
         <% end %>
-        <%= link_to new_event_ticket_path(@event) do %>
-          <button class='btn btn-lg btn-block btn-danger'> BOOK NOW </button>
+        <% if @event.published? %>
+          <%= link_to new_event_ticket_path(@event) do %>
+            <button class='btn btn-lg btn-block btn-danger'> BOOK NOW </button>
+          <% end %>
+        <% else %>
+          <%= link_to publish_event_path(@event), method: :patch do%>
+            <button class='btn btn-lg btn-block btn-danger'> PUBLISH NOW </button>
+          <% end %>
         <% end %>
+        </div>
       </div>
-    </div>
     <div class="col-md-9 event-content">
       <div class="hero-img hidden-sm-down" style="background-image: url(<%= @event.hero_image_url %>); background-size: cover;"> </div>
       <div class="container">
@@ -31,11 +37,9 @@
         <div class="pull-left">
           <%= fa_icon 'clock-o' %>
         </div>
-        <div class="time-details"> 
-          <%= @event.starts_at.strftime('%A, %d %b %Y %l:%M %p') %> 
+        <div class="time-details">
+          <%= @event.starts_at.strftime('%A, %d %b %Y %l:%M %p') %>
         </div>
-
-        
 
         <div class="pull-left">
           <%= fa_icon 'map-marker' %>
@@ -53,7 +57,7 @@
           <%= @event.extended_html_description.html_safe %>
         </div>
 
-      </div>  
+      </div>
     </div>
   </div>
 </div>

@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/NarX/Study/Ruby/PickATicket/spec/views/sessions/new.html.erb_spec.rb": [
+      "/Users/NarX/Study/Ruby/PickATicket/spec/models/user_spec.rb": [
         1,
         null,
         1,
@@ -570,12 +570,17 @@
       "/Users/NarX/Study/Ruby/PickATicket/config/routes.rb": [
         1,
         1,
+        null,
         1,
         1,
         1,
         1,
+        null,
         1,
         1,
+        1,
+        1,
+        null,
         1,
         1,
         null,
@@ -670,8 +675,27 @@
       "/Users/NarX/Study/Ruby/PickATicket/app/helpers/users_helper.rb": [
         1,
         null
+      ],
+      "/Users/NarX/Study/Ruby/PickATicket/app/models/user.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/NarX/Study/Ruby/PickATicket/app/models/application_record.rb": [
+        1,
+        1,
+        null
       ]
     },
-    "timestamp": 1477751164
+    "timestamp": 1477771432
   }
 }

@@ -22,6 +22,11 @@
         <li class="nav-item <% if (current_page?('/event/new'))%> active <% end %> }">
           <%= link_to 'New event', new_event_path, class: 'nav-link' %>
         </li>
+        <li class="nav-item active}">
+          <%= link_to user_path(current_user), class: 'nav-link' do %>
+            <i class="fa fa-user-circle-o" aria-hidden="true"></i> <%= current_user.email %>
+          <% end %>
+        </li>
         <li class="nav-item active">
           <%= link_to 'Log out', logout_path, method: :delete, class: 'nav-link' %>
         </li>
