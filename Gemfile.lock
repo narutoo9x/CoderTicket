@@ -65,6 +65,11 @@ GEM
     docile (1.1.5)
     erubis (2.7.0)
     execjs (2.7.0)
+    factory_girl (4.7.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.7.0)
+      factory_girl (~> 4.7.0)
+      railties (>= 3.0.0)
     ffi (1.9.14)
     font-awesome-rails (4.7.0.0)
       railties (>= 3.2, < 5.1)
@@ -236,6 +241,7 @@ DEPENDENCIES
   bootstrap (~> 4.0.0.alpha5)
   byebug
   coffee-rails (~> 4.1.0)
+  factory_girl_rails
   font-awesome-rails
   font-kit-rails (~> 1.2.0)
   guard-rspec

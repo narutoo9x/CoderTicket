@@ -1,80 +1,90 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/dtt22/code/coderschool/ruby/CoderTicket/spec/routes/events_spec.rb": [
+      "/Users/NarX/Study/Ruby/PickATicket/spec/requests/events_spec.rb": [
         1,
         null,
         1,
         1,
-        null
-      ],
-      "/Users/dtt22/code/coderschool/ruby/CoderTicket/spec/rails_helper.rb": [
-        null,
+        1,
         1,
         1,
         null,
         1,
         1,
         1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        1,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
         1,
         null,
         null,
         null
       ],
-      "/Users/dtt22/code/coderschool/ruby/CoderTicket/config/environment.rb": [
+      "/Users/NarX/Study/Ruby/PickATicket/spec/rails_helper.rb": [
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/NarX/Study/Ruby/PickATicket/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/Users/dtt22/code/coderschool/ruby/CoderTicket/config/application.rb": [
+      "/Users/NarX/Study/Ruby/PickATicket/config/application.rb": [
         1,
         null,
         1,
@@ -98,11 +108,11 @@
         null,
         null,
         null,
-        1,
+        null,
         null,
         null
       ],
-      "/Users/dtt22/code/coderschool/ruby/CoderTicket/config/boot.rb": [
+      "/Users/NarX/Study/Ruby/PickATicket/config/boot.rb": [
         1,
         null,
         1,
@@ -118,7 +128,7 @@
         null,
         null
       ],
-      "/Users/dtt22/code/coderschool/ruby/CoderTicket/config/environments/test.rb": [
+      "/Users/NarX/Study/Ruby/PickATicket/config/environments/test.rb": [
         1,
         null,
         null,
@@ -162,7 +172,7 @@
         null,
         null
       ],
-      "/Users/dtt22/code/coderschool/ruby/CoderTicket/config/initializers/assets.rb": [
+      "/Users/NarX/Study/Ruby/PickATicket/config/initializers/assets.rb": [
         null,
         null,
         null,
@@ -175,7 +185,7 @@
         null,
         null
       ],
-      "/Users/dtt22/code/coderschool/ruby/CoderTicket/config/initializers/backtrace_silencers.rb": [
+      "/Users/NarX/Study/Ruby/PickATicket/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -184,18 +194,18 @@
         null,
         null
       ],
-      "/Users/dtt22/code/coderschool/ruby/CoderTicket/config/initializers/cookies_serializer.rb": [
+      "/Users/NarX/Study/Ruby/PickATicket/config/initializers/cookies_serializer.rb": [
         null,
         null,
         1
       ],
-      "/Users/dtt22/code/coderschool/ruby/CoderTicket/config/initializers/filter_parameter_logging.rb": [
+      "/Users/NarX/Study/Ruby/PickATicket/config/initializers/filter_parameter_logging.rb": [
         null,
         null,
         null,
         1
       ],
-      "/Users/dtt22/code/coderschool/ruby/CoderTicket/config/initializers/inflections.rb": [
+      "/Users/NarX/Study/Ruby/PickATicket/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -213,18 +223,18 @@
         null,
         null
       ],
-      "/Users/dtt22/code/coderschool/ruby/CoderTicket/config/initializers/mime_types.rb": [
+      "/Users/NarX/Study/Ruby/PickATicket/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null
       ],
-      "/Users/dtt22/code/coderschool/ruby/CoderTicket/config/initializers/session_store.rb": [
+      "/Users/NarX/Study/Ruby/PickATicket/config/initializers/session_store.rb": [
         null,
         null,
         1
       ],
-      "/Users/dtt22/code/coderschool/ruby/CoderTicket/config/initializers/simple_form.rb": [
+      "/Users/NarX/Study/Ruby/PickATicket/config/initializers/simple_form.rb": [
         null,
         1,
         null,
@@ -391,7 +401,7 @@
         null,
         null
       ],
-      "/Users/dtt22/code/coderschool/ruby/CoderTicket/config/initializers/simple_form_bootstrap.rb": [
+      "/Users/NarX/Study/Ruby/PickATicket/config/initializers/simple_form_bootstrap.rb": [
         null,
         1,
         1,
@@ -542,7 +552,7 @@
         null,
         null
       ],
-      "/Users/dtt22/code/coderschool/ruby/CoderTicket/config/initializers/wrap_parameters.rb": [
+      "/Users/NarX/Study/Ruby/PickATicket/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -558,10 +568,10 @@
         null,
         null
       ],
-      "/Users/dtt22/code/coderschool/ruby/CoderTicket/config/routes.rb": [
+      "/Users/NarX/Study/Ruby/PickATicket/config/routes.rb": [
         1,
         1,
-        null,
+        1,
         1,
         1,
         null,
@@ -621,22 +631,66 @@
         null,
         null
       ],
-      "/Users/dtt22/code/coderschool/ruby/CoderTicket/app/helpers/application_helper.rb": [
+      "/Users/NarX/Study/Ruby/PickATicket/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/dtt22/code/coderschool/ruby/CoderTicket/app/helpers/events_helper.rb": [
+      "/Users/NarX/Study/Ruby/PickATicket/app/helpers/events_helper.rb": [
         1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/NarX/Study/Ruby/PickATicket/app/helpers/tickets_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/NarX/Study/Ruby/PickATicket/app/models/event.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
         1,
         0,
         null,
         null
       ],
-      "/Users/dtt22/code/coderschool/ruby/CoderTicket/app/helpers/tickets_helper.rb": [
+      "/Users/NarX/Study/Ruby/PickATicket/app/models/venue.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/NarX/Study/Ruby/PickATicket/app/models/category.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/NarX/Study/Ruby/PickATicket/app/controllers/events_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/NarX/Study/Ruby/PickATicket/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
         1,
         null
       ]
     },
-    "timestamp": 1477632197
+    "timestamp": 1477655511
   }
 }
