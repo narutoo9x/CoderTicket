@@ -1,0 +1,8 @@
+<div class="col-sm-6">
+	<h2>Log In</h2>
+	<%= form_tag sessions_path, class: "navbar-form navbar-left" do %>
+	  <%= text_field_tag :name , params[:name], placeholder: "email or username", class: "form-control" %>
+	  <%= password_field_tag :password, nil, placeholder: "password", class: "form-control" %>
+	  <%= submit_tag "Log in", class: "btn btn-primary" %>
+	<% end %>
+</div>

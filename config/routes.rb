@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
   root 'events#index'
   get '/upcoming' => 'events#index'
+  get '/login' => 'sessions#new'
+  get '/register' => 'users#new'
+  delete 'logout' => 'sessions#destroy'
+  resources :sessions, only: [:new, :create]
+  resources :users
   resources :events do
     resources :tickets
   end

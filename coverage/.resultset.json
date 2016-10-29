@@ -1,21 +1,11 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/NarX/Study/Ruby/PickATicket/spec/requests/events_spec.rb": [
+      "/Users/NarX/Study/Ruby/PickATicket/spec/views/sessions/new.html.erb_spec.rb": [
         1,
         null,
         1,
         1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
         null
       ],
       "/Users/NarX/Study/Ruby/PickATicket/spec/rails_helper.rb": [
@@ -568,7 +558,21 @@
         null,
         null
       ],
+      "/Users/NarX/Study/Ruby/PickATicket/spec/factories/users.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/NarX/Study/Ruby/PickATicket/config/routes.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
         1,
         1,
         1,
@@ -633,64 +637,41 @@
       ],
       "/Users/NarX/Study/Ruby/PickATicket/app/helpers/application_helper.rb": [
         1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        null,
+        0,
+        null,
+        0,
+        null,
+        0,
+        null,
         null
       ],
       "/Users/NarX/Study/Ruby/PickATicket/app/helpers/events_helper.rb": [
         1,
         1,
-        1,
+        0,
         null,
+        null
+      ],
+      "/Users/NarX/Study/Ruby/PickATicket/app/helpers/sessions_helper.rb": [
+        1,
         null
       ],
       "/Users/NarX/Study/Ruby/PickATicket/app/helpers/tickets_helper.rb": [
         1,
         null
       ],
-      "/Users/NarX/Study/Ruby/PickATicket/app/models/event.rb": [
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        null,
-        1,
-        0,
-        null,
-        null
-      ],
-      "/Users/NarX/Study/Ruby/PickATicket/app/models/venue.rb": [
-        1,
-        1,
-        1,
-        null
-      ],
-      "/Users/NarX/Study/Ruby/PickATicket/app/models/category.rb": [
-        1,
-        1,
-        1,
-        null
-      ],
-      "/Users/NarX/Study/Ruby/PickATicket/app/controllers/events_controller.rb": [
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null
-      ],
-      "/Users/NarX/Study/Ruby/PickATicket/app/controllers/application_controller.rb": [
-        1,
-        null,
-        null,
+      "/Users/NarX/Study/Ruby/PickATicket/app/helpers/users_helper.rb": [
         1,
         null
       ]
     },
-    "timestamp": 1477655511
+    "timestamp": 1477751164
   }
 }
