@@ -1,9 +1,9 @@
-# Homework 3 - *Name of App*
+# Homework 3 - *Pick A Ticket*
 
-**Name of your app** is a Ruby on Rails application that allows users to create and buy tickets to cool events.
+**Pick A Ticket** is a Ruby on Rails application that allows users to create and buy tickets to cool events.
 
-- Submitted by: **Your Name Here**
-- Time spent: **X** hours
+- Submitted by: **Thanh <Ngo></Ngo>**
+- Time spent: **--** hours doing
 - URL: **Insert your Heroku URL here**
 - SimpleCov Test Coverage: [coverage/index.html][coverage][index.html]
 
