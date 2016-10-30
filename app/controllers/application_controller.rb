@@ -19,18 +19,9 @@ class ApplicationController < ActionController::Base
       end
     end
 
-    def total_price
-      current_order.amount - current_order.discount_amount
-    end
   	def require_user!
   		unless current_user
   			redirect_to login_path, flash: { success: "Please log in first." }
   		end
   	end
-
-    def require_no_user!
-      if current_user
-        redirect_to login_path, flash: {success: "You are already logged in."}
-      end
-    end
 end

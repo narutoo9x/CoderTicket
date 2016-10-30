@@ -1,22 +1,30 @@
 Rails.application.routes.draw do
-  get 'carts/show'
-  get 'carts/index'
-  get 'orders/show'
-  get 'order_items/create'
+
   root 'events#index'
 
   get '/upcoming' => 'events#index'
   get '/login' => 'sessions#new'
   get '/register' => 'users#new'
   delete 'logout' => 'sessions#destroy'
+  get 'ticket_types/new'
 
-  # patch 'users/:id/events/:id/' => 'events#publish_event', as: 'publish_event'
+  # patch 'users/:id/events/:id/publish' => 'events#publish', as: 'publish'
   resources :sessions, only: [:new, :create]
-  resources :users
-  resources :events do
-    resources :tickets
-    patch 'publish', on: :member
+  resources :order_items, only: [:create, :new]
+  resource :users
+  resources :users do
+    resource :events
   end
+  resources :ticket_types
+  resources :events do
+    collection do
+      get 'search'
+    end
+    patch 'publish', on: :member
+    resources :tickets
+    resources :ticket_types
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

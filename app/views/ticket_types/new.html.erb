@@ -1,0 +1,11 @@
+<div class="container">
+	<h2>Create new ticket</h2>
+	<%= @event.name %>
+	<%= simple_form_for (@type) do |f| %>
+		<%= f.input :name %>
+		<%= f.input :price %>
+		<%= f.input :max_quantity, label: 'Quantity' %>
+		<%= f.input :event_id, :as => :hidden, value: @event.id %>
+		<%= f.submit 'Create Ticket' , class: 'btn btn-success' %>
+	<% end %>
+</div>

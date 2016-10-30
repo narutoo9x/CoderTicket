@@ -8,12 +8,12 @@ class Order < ApplicationRecord
 		where(confirm_at: nil).last
 	end
 
-	def amount
-		order_items.map{ |e| e.ticket_type.price * e.quantity }.sum
+	def total_quantity
+		order_items.map{ |e| e.quantity }.sum
 	end
 
-	def discount_amount
-		discount_code == 'CODERSCHOOL' ? 100 : 0
+	def total
+		order_items.map{ |e| e.ticket_type.price * e.quantity }.sum
 	end
 
 end

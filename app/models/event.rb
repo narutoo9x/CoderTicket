@@ -2,13 +2,13 @@ class Event < ActiveRecord::Base
   belongs_to :venue
   belongs_to :category
   belongs_to :user
-  has_many :ticket_types
+  has_many :ticket_types, dependent: :destroy
 
   validates_presence_of :extended_html_description, :venue, :category, :starts_at
   validates_uniqueness_of :name, uniqueness: {scope: [:venue, :starts_at]}
 
   def self.upcoming
-  	Event.where("ends_at > ?", Time.now)
+  	Event.where("ends_at >= ?", Time.now)
   end
 
   def self.search(search)
@@ -16,6 +16,10 @@ class Event < ActiveRecord::Base
   end
 
   scope :published, -> { where.not(publish_at: nil)}
+
+  def is_out_of_date?
+    starts_at < Time.now
+  end
 
   # detect publish event
   def mark_as_published!

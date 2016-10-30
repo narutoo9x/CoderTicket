@@ -19,20 +19,50 @@
           </div>
           <div class="clearfix"></div>
         <% end %>
-        <% if @event.published? %>
-          <%= link_to new_event_ticket_path(@event) do %>
-            <button class='btn btn-lg btn-block btn-danger'> BOOK NOW </button>
+        <% if @event.is_out_of_date? %>
+          <% if is_creator_of? @event %>
+            <%= link_to edit_event_path(@event) do %>
+              <button class='btn btn-lg btn-block btn-warning'> Edit </button>
+            <% end %>
+          <% else %>
+            <button class='btn btn-lg btn-block btn-info'> Closed. </button>
           <% end %>
         <% else %>
-          <%= link_to publish_event_path(@event), method: :patch do%>
-            <button class='btn btn-lg btn-block btn-danger'> PUBLISH NOW </button>
+          <% if @event.ticket_types.count == 0 %>
+            <% if is_creator_of? @event %>
+              <%= link_to new_event_ticket_type_path(@event) do %>
+                <button class='btn btn-lg btn-block btn-danger'> Create Ticket </button>
+              <% end %>
+            <% end %>
+          <% else %>
+            <% if @event.published? %>
+              <% if is_creator_of? @event %>
+                <%= link_to edit_event_path(@event) do %>
+                  <button class='btn btn-lg btn-block btn-warning'> Edit </button>
+                <% end %>
+                <%= link_to new_event_ticket_type_path(@event) do %>
+                  <button class='btn btn-lg btn-block btn-danger'> Create Ticket </button>
+                <% end %>
+              <% else %>
+                <%= link_to new_event_ticket_path(@event) do %>
+                  <button class='btn btn-lg btn-block btn-danger'> BOOK NOW </button>
+                <% end %>
+              <% end %>
+            <% else %>
+              <%= link_to publish_event_path(@event), method: :patch do%>
+                  <button class='btn btn-lg btn-block btn-danger'> PUBLISH NOW </button>
+                <% end %>
+                <%= link_to new_event_ticket_type_path(@event) do %>
+                  <button class='btn btn-lg btn-block btn-danger'> Create Ticket </button>
+                <% end %>
+            <% end %>
           <% end %>
         <% end %>
-        </div>
+      </div>
       </div>
     <div class="col-md-9 col-sm-9 event-content">
-      <div class="hero-img hidden-sm-down" style="background-image: url(<%= @event.hero_image_url %>); background-size: cover;"> </div>
       <div class="container">
+        <div class="hero-img hidden-sm-down" style="background-image: url(<%= @event.hero_image_url %>); background-size: cover;"> </div>
         <h3> <%= @event.name %> </h3>
         <div class="pull-left">
           <%= fa_icon 'clock-o' %>

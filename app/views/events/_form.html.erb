@@ -1,0 +1,17 @@
+<%= simple_form_for(@event) do |f| %>
+	<%= f.input :name, label: "Name"%>
+	<%= f.input :hero_image_url, label: "Cover" %>
+	<%= f.input :extended_html_description, label: "More html info" %>
+	<div class="row">
+		<div class="col-md-6">
+				<%= f.input :starts_at, label: "Start at" %>
+				<%= f.association :category, label: "Category" , collection: Category.order(:name), prompt: "Choose a category" %>
+			</div>
+		<div class="col-md-6">
+			<%= f.input :ends_at, label: "End at" %>
+			<%= f.association :venue, label: "Venue" , collection: Venue.all.order(:name), prompt: "Choose a venue" %>
+		</div>
+	</div>
+	<hr>
+	<%= f.submit :submit, class: 'btn btn-primary' %>
+<% end %>
