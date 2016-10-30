@@ -11,8 +11,8 @@
 
 The following **required** functionality is complete:
 
-* [ ] Implement required user stories
-* [ ] 10 model tests, 2 route tests, 2 controller tests, 2 view tests.
+* [x] Implement required user stories
+* [-] 10 model tests, 2 route tests, 2 controller tests, 2 view tests.
 
 The person with best test coverage will win a small present from the instructor :)
 
@@ -26,7 +26,7 @@ The person with best test coverage will win a small present from the instructor 
         * Implement `EventsController#index` action test
 * [x] Users can search for events from the homepage.
 * [x] Users can click on an event to see details about the event.
-* [ ] Users can click on "Book Now" to go to a page to purchase tickets.
+* [x] Users can click on "Book Now" to go to a page to purchase tickets.
 
 #### Tickets
 
@@ -50,10 +50,10 @@ The person with best test coverage will win a small present from the instructor 
 * [ ] Users can create venues.
 * [x] An event must have at least one `ticket_type` defined before it can be published.
     * **HINT**: add `Event#have_enough_ticket_types?` (and test it)
-* [ ] User can see a list of events he or she has created.
+* [x] User can see a list of events he or she has created.
     * Suggestions
         * You can use `/events/mine` [collection routes](http://guides.rubyonrails.org/routing.html#adding-more-restful-actions)
-* [ ] Users can edit their event after creation. But only the user who created the event can edit the event.
+* [x] Users can edit their event after creation. But only the user who created the event can edit the event.
     * **HINT**: use a `before_action :check_event_changing_permission` to redirect users to event page with a flash error if applicable.
 
 ### Optional Stories
