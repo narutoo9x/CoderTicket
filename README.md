@@ -3,8 +3,8 @@
 **Pick A Ticket** is a Ruby on Rails application that allows users to create and buy tickets to cool events.
 
 - Submitted by: **Thanh Khac**
-- Time spent: **--** hours doing
-- URL: **Insert your Heroku URL here**
+- Time spent: **18** hours doing
+- URL: **https://pickaticket.herokuapp.com/**
 - SimpleCov Test Coverage: [coverage/index.html][coverage][index.html]
 
 ## User Stories
