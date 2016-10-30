@@ -2,7 +2,7 @@
 
 **Pick A Ticket** is a Ruby on Rails application that allows users to create and buy tickets to cool events.
 
-- Submitted by: **Thanh <Ngo></Ngo>**
+- Submitted by: **Thanh Khac**
 - Time spent: **--** hours doing
 - URL: **Insert your Heroku URL here**
 - SimpleCov Test Coverage: [coverage/index.html][coverage][index.html]
@@ -73,7 +73,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2016] [Khac Thanh]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

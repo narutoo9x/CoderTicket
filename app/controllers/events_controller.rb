@@ -7,7 +7,7 @@ class EventsController < ApplicationController
 	  end
   end
 
-  def publish_event
+  def publish
     @event = Event.find(params[:id])
     if @event.un_published?
       @event.mark_as_published!
@@ -26,6 +26,7 @@ class EventsController < ApplicationController
 
   def create
     @event = Event.new event_params
+    @event.user = current_user
     if @event.save
       flash[:success] = 'Create event successfully.'
       redirect_to root_path

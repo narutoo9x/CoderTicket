@@ -3,6 +3,7 @@ class User < ApplicationRecord
 
 	has_many :events
 	has_many :tickets
+	has_one :order
 
 	validates :name, :email, presence: true, uniqueness: { case_sensitive: false }
 	validates :name, length: { maximum: 20 }

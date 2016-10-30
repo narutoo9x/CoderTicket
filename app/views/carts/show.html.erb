@@ -1,0 +1,13 @@
+<h1 class="section-heading">Order Details</h1>
+<hr>
+
+<div class="row">
+	<div class="col-md-2"></div>
+	<div class="col-sm-9 col-md-9">
+		<p>Name: <span id="info"> <%= @last_order.user.name %></span></p>
+		<p>Email: <span id="info"> <%= @last_order.user.email %></span></p>
+		<p>Address: <span id="info"> <%= @last_order.user.address %></span></p>
+
+		<%= render 'card_info', order: @last_order %>
+	</div>
+</div>

@@ -5,12 +5,15 @@ Email:
 <%= @user.email %>
 
 <div class="container-fluid events-list">
+	<% if @events.size == 0 %>
+		<p>There are no more events.</p>
+	<% else %>
     <% @events.in_groups_of(3) do |g| %>
       <div class="row">
         <% g.compact.each do |e| %>
-            <%= render partial: 'events/card', locals: {event: e} %>
+          <%= render partial: 'events/card', locals: {event: e} %>
         <% end %>
       </div>
     <% end %>
-  </div>
+  <% end %>
 </div>

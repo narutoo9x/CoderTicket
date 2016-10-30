@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CsTemplate</title>
+  <title>Pick A Ticket</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -9,7 +9,7 @@
 <body>
 
   <nav class="navbar navbar-dark bg-inverse">
-    <a class="navbar-brand" href="<%= root_path %>">Coder Ticket</a>
+    <a class="navbar-brand" href="<%= root_path %>">Pick A Ticket</a>
     <ul class="nav navbar-nav pull-xs-right">
       <% unless current_user %>
         <li class="nav-item <% if(current_page?('/login'))%> active <% end %>}">
